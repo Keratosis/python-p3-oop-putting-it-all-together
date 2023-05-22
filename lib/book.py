@@ -20,5 +20,19 @@ class Book:
 
       def turn_page(self):
          print("Flipping the page...wow, you read fast!")
-    
-        
+         
+book = Book("And Then There Were None", 272)
+print(f"{book.title}")
+
+# Access attributes
+print(f"Title: {book.title}")
+print(f"Page Count: {book.page_count}")
+
+# Access methods
+book.turn_page()
+
+# Set new page count
+book.page_count = 200
+
+# Print updated page count
+print(f"Updated Page Count: {book.page_count}")
